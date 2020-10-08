@@ -10,7 +10,7 @@ class Stack{
         vector<Object> arr;
     public:
         explicit Stack(const int &size): maxSize{size}, top{-1}{
-            arr.reserve(maxSize);
+            arr.reserve(maxSize);  // set capacity equal to maxSize for stack
         }
 
         bool isEmpty() const{
